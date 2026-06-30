@@ -20,3 +20,9 @@ def load_documents(folder: str):
         docs.append(Document(page_content=text, metadata=metadata))
 
     return docs
+
+
+if __name__ == "__main__":
+    docs = load_documents("data/ai-engineering-notes")
+    print(len(docs))
+    print(docs[0].metadata)
